@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+	<head>
+		<title>Ultimate Travel Festival</title>
+		<link rel="stylesheet" href="index.css" />
+	</head>
+	<body>
+		<header>
+			<h1 lang="en">✍️ Register Your Exhibition Space ✍️</h1>
+		</header>
+		<main>
+			<form id="register-form" name="register-form" onsubmit="handleSubmit(event)">
+				<label>ชื่อบริษัท</label>
+				<input type="text" name="office-name" />
+
+				<label>ขนาดบูธ</label>
+				<select name="size" required>
+					<option disabled selected value="">โปรดเลือก</option>
+					<option value="10x10 ฟุต">10x10 ฟุต</option>
+					<option value="10x15 ฟุต">10x15 ฟุต</option>
+				</select>
+
+				<label>ต้องการโต๊ะตั้งในบูธ</label>
+				<input type="checkbox" name="table" />
+
+				<label>จำนวนเก้าอี้</label>
+				<input type="number" min="1" max="10" name="chair" />
+
+				<label>ชื่อผู้ติดต่อ</label>
+				<input type="text" name="contact-name" />
+
+				<label>เบอร์ผู้ติดต่อ</label>
+				<input type="tel" name="contact-number" />
+
+				<button>Register</button>
+			</form>
+		</main>
+		<script src="register.js"></script>
+	</body>
+</html>
